@@ -9,9 +9,9 @@
  */
 var func_timerCaches = {};
 //**
-//* 优化的缓存定时器
-//* fun mixed 要执行的函数
-//* time unint 间隔时间
+//* 浼樺寲鐨勭紦瀛樺畾鏃跺櫒
+//* fun mixed 瑕佹墽琛岀殑鍑芥暟
+//* time unint 闂撮殧鏃堕棿
 function timerCache(fun,time){
     if(fun== null) return false;
     if(time==null){
@@ -24,4 +24,4 @@ function timerCache(fun,time){
         func_timerCaches[fun] = setTimeout(fun,time);
         return func_timerCaches[fun];
     }
-}
+}   
